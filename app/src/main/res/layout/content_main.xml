@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/content_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:showIn="@layout/app_bar_main"
+tools:context=".MainActivity" >
+<!--android:background="@drawable/coches">-->
+    <LinearLayout
+            android:id="@+id/ll_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@android:color/holo_blue_dark"
+            android:padding="25dp"
+            android:orientation="vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:padding="30dp"
+                android:text="Iniciar Sesión"/>
+        <Button
+                android:id="@+id/btn_cliente"
+                android:text="Cliente"
+                android:textAllCaps="false"
+                android:background="#2ECCFA"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btn_administrador"
+                android:text="Administrador"
+                android:textAllCaps="false"
+                android:background="#2ECCFA"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editTextcontrasenia"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

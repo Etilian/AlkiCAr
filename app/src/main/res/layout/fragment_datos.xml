@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:background="@android:color/holo_blue_dark">
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp" app:cardElevation="10dp"
+            android:clickable="true">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="#2ECCFA">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:id="@+id/textViewMarca"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+
+                        android:text="AA"
+                        android:textColor="#000000"
+                        android:textSize="20sp"/>
+                <TextView
+                        android:id="@+id/textViewModelo"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+
+                        android:text="BB"
+                        android:textColor="#000000"
+                        android:textSize="20sp"/>
+            </LinearLayout>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:contentDescription="TODO"
+                    android:src="?attr/actionModeBackground"
+                    android:id="@+id/imageView2"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:id="@+id/textViewMatricula"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+
+                        android:text="DD"
+                        android:textColor="#000000"
+                        android:textSize="20sp"/>
+                <TextView
+                        android:id="@+id/textViewDisponibilidad"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+
+                        android:text="EE"
+                        android:textColor="#000000"
+                        android:textSize="20sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
